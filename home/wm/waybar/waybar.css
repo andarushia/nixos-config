@@ -1,0 +1,164 @@
+/* Keyframes */
+
+@keyframes blink-critical {
+	to {
+		/*color: @white;*/
+		background-color: @critical;
+	}
+}
+
+
+/* Styles */
+
+@define-color base1	        #605a52;
+@define-color base2	        #93836c;
+@define-color base3	        #b9a992;
+@define-color base4         #dcd3c6;
+@define-color base5	        #e4ddd2;
+@define-color base6         #f1ece4;
+@define-color base7	        #f7f3ee;
+@define-color accent	    #6a4cff;
+@define-color orangeText    #5b5143;
+@define-color orangeTextSec	#957f5f;
+@define-color orangeBg      #f7e0c3;
+@define-color greenText     #525643;
+@define-color greenTextSec  #81895d;
+@define-color greenBg       #e2e9c1;
+@define-color tealText      #465953;
+@define-color tealTextSec   #5f8c7d;
+@define-color tealBg        #d2ebe3;
+@define-color blueText      #4c5361;
+@define-color blueTextSec   #7382a0;
+@define-color blueBg        #dde4f2;
+@define-color purpleText    #614c61;
+@define-color purpleTextSec #9c739c;
+@define-color purpleBg      #f1ddf1;
+@define-color white	        #ffffff;
+
+/* Reset all styles */
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	text-shadow: none;
+	icon-shadow: none;
+}
+
+/* The whole bar */
+#waybar {
+	background: @base7;
+	color: @base1;
+	font-family: Iosevka Nerd Font;
+	font-size: 14pt;
+	/*font-weight: bold;*/
+}
+
+#battery,
+#clock,
+#language,
+#mode,
+#network,
+#pulseaudio,
+#tray,
+#backlight,
+#user,
+#mpris {
+	padding-left: 8pt;
+	padding-right: 8pt;
+}
+
+/* Each critical module */
+#mode,
+#battery.critical.discharging {
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-name: blink-critical;
+	animation-duration: 1s;
+}
+
+/* Each warning */
+#network.disconnected,
+#battery.warning.discharging {
+	color: @orangeText;
+    background: @orangeBg;
+}
+
+/* And now modules themselves in their respective order */
+
+/* Current sway mode (resize etc) */
+#mode {
+	color: @base1;
+	background: @base5;
+}
+
+/* Workspaces stuff */
+#workspaces button {
+	/*font-weight: bold;*/
+	padding-left: 2pt;
+	padding-right: 2pt;
+	color: @base1;
+	background: @base7;
+}
+
+/* Inactive (on unfocused output) */
+#workspaces button.visible {
+	color: @base1;
+	background: @base7;
+}
+
+/* Active (on focused output) */
+#workspaces button.focused {
+	color: @base1;
+	background: @base5;
+}
+
+/* Contains an urgent window */
+#workspaces button.urgent {
+	color: @orangeText;
+	background: @orangeBg;
+}
+
+/* Style when cursor is on the button */
+#workspaces button:hover {
+	background: @base1;
+	color: @base5;
+}
+
+#window {
+    color: @base1;
+	margin-right: 10pt;
+	margin-left:  10pt;
+}
+
+#pulseaudio {
+	background: @blueBg;
+	color: @blueText;
+}
+
+#language {
+	background: @greenBg;
+	color: @greenText;
+}
+
+#battery {
+	background: @purpleBg;
+	color: @purpleText;
+}
+
+#tray {
+	background: @base7;
+}
+
+#clock.date {
+	background: @base7;
+	color: @base1;
+}
+
+#clock.time {
+	background: @base7;
+	color: @base1;
+}
