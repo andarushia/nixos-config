@@ -10,7 +10,6 @@
     discord
     tdesktop
     irssi
-    steam-tui
 
     # fonts
     (nerdfonts.override { fonts = [ "Iosevka" ]; }) 
