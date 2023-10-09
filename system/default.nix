@@ -113,7 +113,6 @@
     xdg-utils
     home-manager
     wl-clipboard
-    xclip
   ];
 
   programs.light.enable = true;
