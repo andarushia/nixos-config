@@ -237,13 +237,14 @@
           b = "exec ${pkgs.light}/bin/light -T 1.4";
           "Shift+b" = "exec ${pkgs.light}/bin/light -T 0.72";
 
-          v = "exec ${pkgs.pulseaudio}/bin/pactl set-sink-volume @DEFAULT_SINK@ +1%";
-          "Shift+v" = "exec ${pkgs.pulseaudio}/bin/pactl set-sink-volume @DEFAULT_SINK@ -1%";
-          m = "exec ${pkgs.pulseaudio}/bin/pactl set-sink-mute @DEFAULT_SINK@ toggle";
+          v = "exec ${pkgs.alsa-utils}/bin/amixer set Master 5%+";
+          "Shift+v" = "exec ${pkgs.alsa-utils}/bin/amixer set Master 5%-";
+          m = "exec ${pkgs.alsa-utils}/bin/amixer set Master toggle";
           "Shift+m" = "exec ${pkgs.pulseaudio}/bin/pactl set-source-mute @DEFAULT_SOURCE@ toggle";
 
-
           n = "exec ${pkgs.mako}/bin/makoctl dismiss -a";
+          
+          w = "exec ${pkgs.wlsunset}/bin/wlsunset";
 
           Return = "mode default";
           Escape = "mode default";

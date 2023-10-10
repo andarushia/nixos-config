@@ -2,8 +2,8 @@
 
 @keyframes blink-critical {
 	to {
-		/*color: @white;*/
-		background-color: @critical;
+		color: @redText;
+		background-color: @redBg;
 	}
 }
 
@@ -36,7 +36,7 @@
 @define-color purpleText    #614c61;
 @define-color purpleTextSec #9c739c;
 @define-color purpleBg      #f1ddf1;
-@define-color white	    #ffffff;
+@define-color white	        #ffffff;
 
 /* Reset all styles */
 * {
@@ -148,8 +148,8 @@
 }
 
 #battery {
-	background: @purpleBg;
-	color: @purpleText;
+	background: @greenBg;
+	color: @greenText;
 }
 
 #tray {
