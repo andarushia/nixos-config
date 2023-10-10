@@ -29,28 +29,28 @@
           foreground = "0x605a52";
         };
         cursor = {
-          text   = "0xe4ddd2";
-          cursor = "0x605a52";
+          cursor = "0x7382a0";
+          text   = "0xf7f3ee";
         };
         normal = {
-          black = "0x605a52";
-          red = "0x955f5f";
-          green = "0x81895d";
-          yellow = "0x957f5f";
-          blue = "0x7382a0";
+          black   = "0x605a52";
+          red     = "0x955f5f";
+          green   = "0x81895d";
+          yellow  = "0x957f5f";
+          blue    = "0x7382a0";
           magenta = "0x9c739c";
-          cyan  = "0x5f8c7d";
-          white = "0xe4ddd2";
+          cyan    = "0x5f8c7d";
+          white   = "0xe4ddd2";
         };
         bright = {
-          black = "0xb9a992";
-          red = "0x955f5f";
-          green = "0x81895d";
-          yellow = "0x957f5f";
-          blue = "0x7382a0";
+          black   = "0xb9a992";
+          red     = "0x955f5f";
+          green   = "0x81895d";
+          yellow  = "0x957f5f";
+          blue    = "0x7382a0";
           magenta = "0x9c739c";
-          cyan = "0x5f8c7d";
-          white = "0xf7f3ee";
+          cyan    = "0x5f8c7d";
+          white   = "0xf7f3ee";
         };
       };
     };
