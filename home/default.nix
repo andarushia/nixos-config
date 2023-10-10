@@ -26,6 +26,7 @@
   # environment.
   home.packages = with pkgs; [
     pfetch
+    direnv
 
     ripgrep
     gdb
