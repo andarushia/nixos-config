@@ -52,7 +52,6 @@
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
-    loadInNixShell = true;
   };
 
   # Let Home Manager install and manage itself.
