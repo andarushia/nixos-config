@@ -33,24 +33,24 @@
           text   = "0xf7f3ee";
         };
         normal = {
-          black   = "0x605a52";
+          black   = "0xe4ddd2";
           red     = "0x955f5f";
           green   = "0x81895d";
           yellow  = "0x957f5f";
           blue    = "0x7382a0";
           magenta = "0x9c739c";
           cyan    = "0x5f8c7d";
-          white   = "0xe4ddd2";
+          white   = "0x605a52";
         };
         bright = {
-          black   = "0xb9a992";
+          black   = "0xe4ddd2";
           red     = "0x955f5f";
           green   = "0x81895d";
           yellow  = "0x957f5f";
           blue    = "0x7382a0";
           magenta = "0x9c739c";
           cyan    = "0x5f8c7d";
-          white   = "0xf7f3ee";
+          white   = "0x605a52";
         };
       };
     };

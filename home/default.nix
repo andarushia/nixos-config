@@ -25,7 +25,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    neofetch
+    pfetch
 
     ripgrep
     gdb
@@ -52,12 +52,12 @@
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
-  xdg.configFile = {
-    neofetch = {
-      source = ./files/neofetch.conf;
-      target = "neofetch/config.conf";
-    };
-  };
+  # xdg.configFile = {
+  #  neofetch = {
+  #     source = ./files/neofetch.conf;
+  #     target = "neofetch/config.conf";
+  #   };
+  # };
 
   home.pointerCursor = {
     name = "Adwaita";
