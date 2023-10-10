@@ -81,6 +81,8 @@
     enable = true;
     font = "Iosevka Nerd Font 11";
     backgroundColor = "#f7f3ee";
+    anchor = "bottom-right";
+    maxIconSize = 32;
     borderColor = "#e4ddd2";
     textColor = "#605a52";
     progressColor = "source #9c739c";
@@ -88,7 +90,7 @@
     borderSize = 2;
     defaultTimeout = 5000;
     margin = "10";
-    width = 400;
+    width = 200;
   };
 
   services.wlsunset = {

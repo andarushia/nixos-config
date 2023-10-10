@@ -21,6 +21,9 @@
 @define-color orangeText    #5b5143;
 @define-color orangeTextSec	#957f5f;
 @define-color orangeBg      #f7e0c3;
+@define-color redText       #5b4343;
+@define-color redTextSec	#955f5f;
+@define-color redBg         #f6cfcb;
 @define-color greenText     #525643;
 @define-color greenTextSec  #81895d;
 @define-color greenBg       #e2e9c1;
@@ -33,7 +36,7 @@
 @define-color purpleText    #614c61;
 @define-color purpleTextSec #9c739c;
 @define-color purpleBg      #f1ddf1;
-@define-color white	        #ffffff;
+@define-color white	    #ffffff;
 
 /* Reset all styles */
 * {
@@ -83,8 +86,8 @@
 /* Each warning */
 #network.disconnected,
 #battery.warning.discharging {
-	color: @orangeText;
-    background: @orangeBg;
+	color: @redText;
+    background: @redBg;
 }
 
 /* And now modules themselves in their respective order */
@@ -118,8 +121,8 @@
 
 /* Contains an urgent window */
 #workspaces button.urgent {
-	color: @orangeText;
-	background: @orangeBg;
+	color: @redText;
+	background: @redBg;
 }
 
 /* Style when cursor is on the button */
@@ -140,8 +143,8 @@
 }
 
 #language {
-	background: @greenBg;
-	color: @greenText;
+	background: @purpleBg;
+	color: @purpleText;
 }
 
 #battery {
