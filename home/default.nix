@@ -82,6 +82,7 @@
       autoload -Uz colors && colors
       precmd() { print -Pn "\e]0;zsh %~%(1j, (%j job%(2j|s|)) ,)\e\\"; }
       preexec() { print -Pn "\e]0;$\{(q)1\}\e\\"; }
+      eval "$(direnv hook zsh)"
     '';
   };
 
