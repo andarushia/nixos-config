@@ -10,6 +10,7 @@
     discord
     tdesktop
     irssi
+    wlsunset
 
     # fonts
     (nerdfonts.override { fonts = [ "Iosevka" ]; }) 
@@ -80,20 +81,22 @@
     enable = true;
     font = "Iosevka Nerd Font 11";
     backgroundColor = "#f7f3ee";
-    borderColor = "#e4dd2";
+    anchor = "bottom-right";
+    maxIconSize = 32;
+    borderColor = "#e4ddd2";
     textColor = "#605a52";
     progressColor = "source #9c739c";
     borderRadius = 0;
     borderSize = 2;
     defaultTimeout = 5000;
     margin = "10";
-    width = 400;
+    width = 200;
   };
 
   services.wlsunset = {
     enable = true;
-    latitude = "60";
-    longitude = "30";
+    latitude = "56";
+    longitude = "38";
     temperature.night = 4500;
   };
 

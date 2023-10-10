@@ -42,6 +42,8 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
+(setq global-hl-line-modes nil)
+
 
 ;; set splash screen image
 (setq fancy-splash-image (concat "~/.config/home-manager/home/files/" "bnuy.png"))

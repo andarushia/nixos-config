@@ -9,8 +9,8 @@
         title = "alacritty";
 
         padding = {
-            x = 30;
-            y = 30;
+            x = 10;
+            y = 10;
         };
         dimensions = {
           lines = 75;
@@ -29,28 +29,28 @@
           foreground = "0x605a52";
         };
         cursor = {
-          text   = "0xe4ddd2";
-          cursor = "0x605a52";
+          cursor = "0x7382a0";
+          text   = "0xf7f3ee";
         };
         normal = {
-          black = "0xf7f3ee";
-          red = "0xaf0000";
-          green = "0x008700";
-          yellow = "0x5f8700";
-          blue = "0x0087af";
-          magenta = "0x878787";
-          cyan  = "0x005f87";
-          white = "0x444444";
+          black   = "0x605a52";
+          red     = "0x955f5f";
+          green   = "0x81895d";
+          yellow  = "0x957f5f";
+          blue    = "0x7382a0";
+          magenta = "0x9c739c";
+          cyan    = "0x5f8c7d";
+          white   = "0xe4ddd2";
         };
         bright = {
-          black = "0xbcbcbc";
-          red = "0xd70000";
-          green = "0xd70087";
-          yellow = "0x8700af";
-          blue = "0xd75f00";
-          magenta = "0xd75f00";
-          cyan = "0x005faf";
-          white = "0x005f87";
+          black   = "0xb9a992";
+          red     = "0x955f5f";
+          green   = "0x81895d";
+          yellow  = "0x957f5f";
+          blue    = "0x7382a0";
+          magenta = "0x9c739c";
+          cyan    = "0x5f8c7d";
+          white   = "0xf7f3ee";
         };
       };
     };

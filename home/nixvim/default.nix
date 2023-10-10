@@ -4,10 +4,26 @@
    programs.nixvim = {
     enable = true;
 
-    colorschemes.catppuccin = {
+    colorschemes.base16 = {
       enable = true;
-      flavour = "latte";
-      transparentBackground = true;
+      customColorScheme = {
+        base00 = "#f7f3ee";
+        base01 = "#f1ece4";
+        base02 = "#e4ddd2";
+        base03 = "#7382a0";
+        base04 = "#605a52";
+        base05 = "#605a52";
+        base06 = "#5f8c7d";
+        base07 = "#605a52";
+        base08 = "#605a52";
+        base09 = "#955f5f";
+        base0A = "#81895d";
+        base0B = "#9c739c";
+        base0C = "#7382a0";
+        base0D = "#9c739c";
+        base0E = "#5f8c7d";
+        base0F = "#605a52";
+      };
     };
 
     highlight = { Normal.bg = "none"; };
@@ -47,7 +63,6 @@
       title = true;
       termguicolors = true;
       background = "light";
-      showmode = false;
     };
 
     plugins = {
