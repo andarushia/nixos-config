@@ -26,7 +26,6 @@
   # environment.
   home.packages = with pkgs; [
     pfetch
-    direnv
 
     ripgrep
     gdb
@@ -48,6 +47,12 @@
     EDITOR = "nvim";
     VISUAL = "nvim";
     DEFAULT_USER = "$(whoami)";
+  };
+  
+  programs.direnv = {
+    enable = true;
+    nix-direnv.enable = true;
+    loadInNixShell = true;
   };
 
   # Let Home Manager install and manage itself.
