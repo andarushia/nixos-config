@@ -79,18 +79,19 @@
 
   services.mako = {
     enable = true;
-    font = "Iosevka Nerd Font 11";
+    font = "Iosevka Nerd Font 10";
     backgroundColor = "#f7f3ee";
     anchor = "bottom-right";
-    maxIconSize = 32;
+    maxIconSize = 44;
     borderColor = "#e4ddd2";
     textColor = "#605a52";
     progressColor = "source #9c739c";
     borderRadius = 0;
     borderSize = 2;
     defaultTimeout = 5000;
-    margin = "10";
-    width = 200;
+    margin = "5";
+    height = 70;
+    width = 250;
   };
 
   services.wlsunset = {
