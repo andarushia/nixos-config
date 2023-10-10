@@ -33,7 +33,7 @@
           text   = "0xf7f3ee";
         };
         normal = {
-          black   = "0xe4ddd2";
+          black   = "0xb9a992";
           red     = "0x955f5f";
           green   = "0x81895d";
           yellow  = "0x957f5f";
@@ -43,7 +43,7 @@
           white   = "0x605a52";
         };
         bright = {
-          black   = "0xe4ddd2";
+          black   = "0xb9a992";
           red     = "0x955f5f";
           green   = "0x81895d";
           yellow  = "0x957f5f";
