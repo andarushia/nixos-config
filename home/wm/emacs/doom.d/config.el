@@ -52,11 +52,6 @@
 (add-hook! '+doom-dashboard-mode-hook (hl-line-mode -1))
 (setq-hook! '+doom-dashboard-mode-hook evil-normal-state-cursor (list nil))
 
-;; evil-mode keymaps
-(evil-define-key 'visual 'global
-  "J" (kbd ":m '>+1<CR>gv=gv")
-  "K" (kbd ":m '<-2<CR>gv=gv"))
-
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
