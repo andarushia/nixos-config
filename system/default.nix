@@ -89,7 +89,8 @@
     defaultUserShell = pkgs.zsh;
     users.andalusia = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
+      extraGroups = [ "wheel" "video" "audio" "networkmanager" ]; # Enable ‘sudo’ for the user.
+      subUidRanges = [{ startUid = 100000; count = 65536; }];
     };
   };
 

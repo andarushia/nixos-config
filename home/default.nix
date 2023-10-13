@@ -8,8 +8,8 @@
 
   nixpkgs = {
     config = {
-        allowUnfree = true;
-        allowUnfreePredicate = (_: true);
+      allowUnfree = true;
+      allowUnfreePredicate = (_: true);
     };
   };
 
@@ -26,6 +26,7 @@
   # environment.
   home.packages = with pkgs; [
     pfetch
+    shadow
 
     ripgrep
     gdb
@@ -35,7 +36,7 @@
     gnumake
     cargo
     rustc
-    
+
     nixpkgs-fmt
     gopls
     clang-tools
@@ -48,7 +49,7 @@
     VISUAL = "nvim";
     DEFAULT_USER = "$(whoami)";
   };
-  
+
   programs.direnv = {
     enable = true;
     nix-direnv.enable = true;
