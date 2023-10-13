@@ -6,7 +6,7 @@
 
 {
   nix = {
-    registry = lib.mapAttrs (_: value: {flake = value; }) inputs;
+    registry = lib.mapAttrs (_: value: { flake = value; }) inputs;
 
     extraOptions = ''
       experimental-features = nix-command flakes
@@ -30,7 +30,7 @@
   networking.hostName = "anya"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
 
   # Set your time zone.
   time.timeZone = "Europe/Moscow";
@@ -49,31 +49,31 @@
 
 
   security.sudo = {
-  enable = true;
-  extraRules = [{
-    commands = [
-      {
-        command = "${pkgs.systemd}/bin/systemctl suspend";
-        options = [ "NOPASSWD" ];
-      }
-      {
-        command = "${pkgs.systemd}/bin/reboot";
-        options = [ "NOPASSWD" ];
-      }
-      {
-        command = "${pkgs.systemd}/bin/poweroff";
-        options = [ "NOPASSWD" ];
-      }
-    ];
-    groups = [ "wheel" ];
-  }];
-};
+    enable = true;
+    extraRules = [{
+      commands = [
+        {
+          command = "${pkgs.systemd}/bin/systemctl suspend";
+          options = [ "NOPASSWD" ];
+        }
+        {
+          command = "${pkgs.systemd}/bin/reboot";
+          options = [ "NOPASSWD" ];
+        }
+        {
+          command = "${pkgs.systemd}/bin/poweroff";
+          options = [ "NOPASSWD" ];
+        }
+      ];
+      groups = [ "wheel" ];
+    }];
+  };
 
 
   # Enable sound.
   sound.enable = true;
-	
-  
+
+
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -92,14 +92,15 @@
       extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
     };
   };
-  
+
   hardware.opengl = {
     enable = true;
     driSupport = true;
   };
 
   services.dbus.enable = true;
-  
+  services.ivpn.enable = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
@@ -125,12 +126,12 @@
   programs.zsh = {
     enable = true;
     shellAliases = {
-        update = "sudo nixos-rebuild switch";
+      update = "sudo nixos-rebuild switch";
     };
     ohMyZsh = {
-        enable = true;
-        plugins = [ "git" ];
-        theme = "gentoo";
+      enable = true;
+      plugins = [ "git" ];
+      theme = "gentoo";
     };
   };
   services.greetd = {

@@ -9,13 +9,13 @@
 
   home.packages = with pkgs; [
     firefox
-    discord
+    webcord-vencord
     tdesktop
     irssi
     wlsunset
 
     # fonts
-    (nerdfonts.override { fonts = [ "Iosevka" ]; }) 
+    (nerdfonts.override { fonts = [ "Iosevka" ]; })
   ];
 
   programs.fuzzel = {
