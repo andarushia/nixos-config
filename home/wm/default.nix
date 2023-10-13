@@ -1,3 +1,5 @@
+# home/wm/default.nix
+
 { pkgs, ... }: {
   imports = [
     ./sway

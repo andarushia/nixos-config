@@ -120,6 +120,8 @@
   programs.neovim.enable = true;
   programs.neovim.defaultEditor = true;
 
+  programs.noisetorch.enable = true;
+
   programs.zsh = {
     enable = true;
     shellAliases = {
