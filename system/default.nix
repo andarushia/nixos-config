@@ -69,16 +69,9 @@
     }];
   };
 
-  virtualisation = {
-    podman = {
-      enable = true;
-
-      # Create a `docker` alias for podman, to use it as a drop-in replacement
-      dockerCompat = true;
-
-      # Required for containers under podman-compose to be able to talk to each other.
-      defaultNetwork.settings.dns_enabled = true;
-    };
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
   };
 
   # Enable sound.
@@ -100,8 +93,7 @@
     defaultUserShell = pkgs.zsh;
     users.andalusia = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "video" "audio" "networkmanager" ]; # Enable ‘sudo’ for the user.
-      subUidRanges = [{ startUid = 100000; count = 65536; }];
+      extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
     };
   };
 
