@@ -32,7 +32,7 @@
     gdb
 
     gcc
-    go
+    go_1_21
     gnumake
     cargo
     rustc
