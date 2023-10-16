@@ -69,10 +69,10 @@
     }];
   };
 
-  virtualisation.docker.rootless = {
-    enable = true;
-    setSocketVariable = true;
-  };
+  virtualisation.docker.enable = false;
+  virtualisation.podman.enable = true;
+  virtualisation.podman.dockerSocket.enable = true;
+  virtualisation.podman.defaultNetwork.settings.dns_enabled = true;
 
   # Enable sound.
   sound.enable = true;
@@ -93,7 +93,7 @@
     defaultUserShell = pkgs.zsh;
     users.andalusia = {
       isNormalUser = true;
-      extraGroups = [ "wheel" "video" "audio" "networkmanager" "docker" ]; # Enable ‘sudo’ for the user.
+      extraGroups = [ "wheel" "video" "audio" "networkmanager" "podman" ]; # Enable ‘sudo’ for the user.
     };
   };
 
@@ -109,6 +109,8 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     neovim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    arion    
+    docker-client
     wget
     curl
     htop
