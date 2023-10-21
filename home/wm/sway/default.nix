@@ -190,7 +190,7 @@
           "${mod}+p" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy output";
           Print = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy output";
           "${mod}+Shift+p" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy area";
-          XF86SelectiveScreenshot = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy area";
+          "Ctrl+Print" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy area";
           "${mod}+Ctrl+p" = "exec ${pkgs.sway-contrib.grimshot}/bin/grimshot copy window";
 
           # Workspaces
